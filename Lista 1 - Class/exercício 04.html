@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <!-- 4- Crie uma classe chamada Celular com os atributos marca ,
+            modelo e armazenamento .
+            Implemente um método chamado informacoesCelular() que imprime as
+            informações do celular no formato desejado.
+            Crie uma instância da classe Celular com uma marca, modelo e capacidade
+            de armazenamento específicos.
+            Utilize o método informacoesCelular() para exibir as informações do celular. -->
+
+        <script>
+
+            class Celular{
+                marca;
+                modelo;
+                armazenamento;
+
+                constructor(marca, modelo, armazenamento){
+                    this.marca = marca;
+                    this.modelo = modelo;
+                    this.armazenamento = armazenamento;
+                }
+
+                informacoesCelular(){
+                    return("Marca:" + this.marca + "\n Modelo:" + this.modelo + "\n Armazenamento:" + this.armazenamento)
+                }
+            }
+
+            let Celular1 = new Celular('Iphone', '15 Pro Max' , '256 GB')
+
+            console.log(Celular1);
+            console.log(Celular1.informacoesCelular()); 
+
+        </script>
+</body>
+</html>

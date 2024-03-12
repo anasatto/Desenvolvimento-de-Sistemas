@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <!-- 1 - Crie uma classe chamada Produto com os atributos nome ,
+            preco e quantidade .
+            Implemente um método chamado calcularTotal() que calcula o valor total do
+            produto multiplicando o preço pela quantidade.
+            Crie uma instância da classe Produto com um nome, preço e quantidade
+            específicos.
+            Utilize o método calcularTotal() para calcular o valor total do produto -->
+        <script>
+            class Produto{
+            nome;
+            preco;
+            quantidade;
+            constructor(nome, preco, quantidade){
+                this.nome = nome;
+                this.preco = preco;
+                this.quantidade = quantidade;
+            }
+            //atributo = caracteristicas
+       
+
+        //método
+        calcularTotal(){
+            return(this.preco * this.quantidade);
+        }
+    }
+        //instancia
+        let Produto1 = new Produto("Fini", 7.50 , 2);
+
+
+            console.log(Produto1);
+            console.log(`Valor total da compre é: ${Produto1.calcularTotal()}`); 
+        
+
+        </script>
+</body>
+</html>

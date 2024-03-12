@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <!-- 5- Crie uma classe chamada Filme com os atributos titulo ,
+            genero e duracao .
+            Implemente um método chamado informacoesFilme() que imprime as
+            informações do filme no formato desejado.
+            Crie uma instância da classe Filme com um título, gênero e duração
+            específicos.
+            Utilize o método informacoesFilme() para exibir as informações do filme. -->
+
+        <script>
+
+             class Filme{
+                titulo;
+                genero;
+                duracao;
+
+            constructor(titulo, genero, duracao ){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+
+            }
+
+            informacoesFilme(){
+            return("Título:" + this.titulo + "\nGênero:" + this.genero + "\nDuração:" + this.duracao)
+        }
+    }
+
+        let Filme1 = new Filme('Velozes e Furiosos: Desafio em Tóquio' , 'Ação' , '1h 44m')
+
+        console.log(Filme1);
+        console.log(Filme1.informacoesFilme()); 
+
+        </script> 
+</body>
+</html>

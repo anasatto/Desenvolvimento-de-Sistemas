@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <!-- 6- Crie uma classe Empresa com os atributos nome ,
+            receitaAnual e despesasAnuais .
+            Implemente um método chamado calcularLucroAnual() que retorna o lucro
+            anual da empresa, calculado subtraindo as despesas anuais da receita
+            anual.
+            Adicione um método chamado exibirRelatorio() que exibe um relatório
+            contendo o nome da empresa, sua receita anual, suas despesas anuais e o
+            lucro anual.
+            Crie duas instâncias da classe Empresa com informações específicas.
+            Chame o método calcularLucroAnual() para cada empresa e exiba o relatório
+            usando o método exibirRelatorio()  -->
+
+        <script>
+
+            class Empresa{
+                nome;
+                receitaAnual;
+                despesasAnuais;
+
+                constructor(nome, receitaAnual, despesasAnuais){
+                    this.nome = nome;
+                    this.receitaAnual = receitaAnual;
+                    this.despesasAnuais = despesasAnuais;
+                }
+
+                calcularLucroAnual(){
+                    return(this.receitaAnual + this.despesasAnuais)
+                }
+
+                exibirRelatorio(){
+                    return("Nome da empresa:" + this.nome + "\nReceita anual:" + this.receitaAnual + "\nDespesas anuais:" + this.despesasAnuais + "\nLucro anual:");
+                }
+
+            }
+
+            let Empresa1 = new Empresa ('ResinBee' , 500000 ,  80000 )
+            let Empresa2 = new Empresa ('Apple' , 11900000000 , 8500000000)
+
+            console.log(Empresa1.exibirRelatorio());
+            console.log(Empresa1.calcularLucroAnual());
+
+            console.log(Empresa2.exibirRelatorio());
+            console.log(Empresa2.calcularLucroAnual());
+            
+        </script>
+</body>
+</html>
